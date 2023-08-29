@@ -10,7 +10,7 @@ const CoinCard = ({
   currencySymbol = "₹",
 }) => {
   return (
-    <Link to={`/coins/${id}`} rel="noreferrer">
+    <Link to={`/coin/${id}`} rel="noreferrer">
       <VStack
         w={"52"}
         shadow={"lg"}

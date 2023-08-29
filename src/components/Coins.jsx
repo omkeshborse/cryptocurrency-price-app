@@ -57,10 +57,10 @@ const Coins = () => {
               </HStack>
             </RadioGroup>
             <HStack wrap={"wrap"} justifyContent={"space-evenly"}>
-              {coins.map((i) => {
+              {coins.map((i,index) => {
                 return (
                   <CoinCard
-                    key={i.id}
+                    key={`coin-${index}`}
                     id={i.id}
                     current_price={i.current_price}
                     name={i.name}
@@ -75,7 +75,7 @@ const Coins = () => {
               {btns.map((items, index) => {
                 return (
                   <Button
-                    key={1}
+                    key={`button-${index}`}
                     bgColor={"blackAlpha.900"}
                     color={"white"}
                     onClick={() => changePage(index + 1)}
